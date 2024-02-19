@@ -1,0 +1,126 @@
+button,
+input {
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #e7e2e2;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #2a4c94;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back__btn {
+    background-color: #691b14;
+    padding-inline: 5px;
+    color: #91908f;
+}
+
+.top p,
+.copy__text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top p a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: .2;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.otp__area {
+    box-sizing: border-box;
+    width: 72%;
+    background-color: #b66c67;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+    margin-block: 35px;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 18px;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #958c8b;
+    text-align: center;
+    color: white;
+}
+
+input:focus {
+    border: 2px solid white;
+}
+
+.copy__text span {
+    color: #2a4c94;
+    cursor: pointer;
+}
+
+.keyboard__area {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-block: 40px 30px;
+    gap: 20px;
+}
+
+.num__btn {
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.not__visible {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 700px) {
+    .otp {
+        display: flex;
+        gap: 10px;
+    }
+
+    .otp__area {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .otp__area-copy__text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+
+    .keyboard__area {
+        flex-basis: 50%;
+        column-gap: 50px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 80%;
+    }
+}

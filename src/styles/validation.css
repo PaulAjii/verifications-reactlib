@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: sans-serif;
+    color: #e7e2e2;
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url('../assets/Reg_Page_1.jpg');
+    background-size: cover;
+}
+
+.step__container {
+    box-sizing: border-box;
+    background-color: #a1534e;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 92%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        background-image: url('../assets/REGISTRATION_LANDSCAPE_2.png');
+        background-size: cover;
+        padding-inline: 20px;
+    }
+
+    .step__container {
+        width: min(100%, 850px);
+    }
+}
